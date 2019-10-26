@@ -8,7 +8,46 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trivia Quiz</title>
 </head>
-<body>
-    
+<body class="text-center">
+    <h1 class="text-center border border-primary bg-dark text-white rounded w-25 p-3 mx-auto">Time Left: <strong><span id="timeLeft"></span></strong></h1>
+    <table class="table">
+        <thread>
+            <tr>
+                <th scope= "col">Question 1</th>
+                <th scope= "col">Question 2</th>
+                <th scope= "col">Question 3</th>
+                <th scope= "col">Question 4</th>
+            </tr>
+        </thread>
+        <tbody>
+            <td>
+                <form action="/action_page.php">
+                <p>The 16th President of the United States was Abraham Lincoln.</p>
+                  <input type="radio" name="Question1" value="true"> True<br>
+                  <input type="radio" name="Question1" value="false"> False<br>
+                  </form>
+            </td>
+            <td><form action="/action_page.php">
+                <p>The Secret Service was originally created to protect the president.</p>
+                  <input type="radio" name="Question2" value="true"> True<br>
+                  <input type="radio" name="Question2" value="false"> False<br>
+                  </form>
+                </td>
+            <td><form action="/action_page.php">
+                <p>The Secret Service was originally created by The 1st President's cabinet.</p>
+                  <input type="radio" name="Question3" value="true"> True<br>
+                  <input type="radio" name="Question3" value="false"> False<br>
+                  </form>
+                </td>
+            <td><form action="/action_page.php">
+                <p>There was only ever one recognizable form of the USD.</p>
+                  <input type="radio" name="Question4" value="true"> True<br>
+                  <input type="radio" name="Question4" value="false"> False<br>
+                  </form>
+                </td>
+        </tbody>
+    </table>
+
+    <button type="button" class="mx-auto btn btn-danger" id="endQuiz">End Quiz</button>
 </body>
 </html>
