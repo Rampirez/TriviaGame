@@ -8,7 +8,7 @@ var question4 = "";
 var question4Answer = "";
 var correctAnswers = 0;
 var incorrectAnswers = 0;
-var timeLeft = 5;
+var timeLeft = 30;
 
 timeInterval = setInterval(timeRemaining, 1000);
 
@@ -62,21 +62,21 @@ function endQuiz() {
   }
 
   question2 = $("input[name='Question2']:checked").val();
-  if (question2 == "true") {
-    question2Answer = "Question 2 was incorrect!";
-    incorrectAnswers++;
-  } else {
+  if (question2 == "false") {
     question2Answer = "Question 2 was correct!";
     correctAnswers++;
+  } else {
+    question2Answer = "Question 2 was incorrect!";
+    incorrectAnswers++;
   }
 
   question3 = $("input[name='Question3']:checked").val();
-  if (question3 == "true") {
-    question3Answer = "Question 3 was incorrect!";
-    incorrectAnswers++;
-  } else {
+  if (question3 == "false") {
     question3Answer = "Question 3 was correct!";
     correctAnswers++;
+  } else {
+    question3Answer = "Question 3 was incorrect!";
+    incorrectAnswers++;
   }
 
   question4 = $("input[name='Question4']:checked").val();
